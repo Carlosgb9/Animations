@@ -9,6 +9,9 @@ import android.graphics.drawable.shapes.OvalShape;
 import android.os.Bundle;
 import android.util.AttributeSet;
 import android.view.View;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
+import android.widget.Button;
 
 public class Action extends AppCompatActivity {
 
@@ -19,6 +22,8 @@ public class Action extends AppCompatActivity {
         int selectedAction = bundle.getInt("button");
         if (selectedAction == R.id.bDrawCercle){
             setContentView(new CircleView(this));
+        } else if (selectedAction == R.id.bHorizontal){
+
         }
     }
 

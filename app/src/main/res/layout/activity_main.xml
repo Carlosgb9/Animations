@@ -21,6 +21,18 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/Circles" />
+
+            <Button
+                android:id="@+id/bTween"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Animacio tween" />
+
+            <Button
+                android:id="@+id/bHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Desplaçament horizontal" />
         </LinearLayout>
     </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>
