@@ -26,13 +26,37 @@
                 android:id="@+id/bTween"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Animacio tween" />
+                android:text="@string/Tween" />
 
             <Button
-                android:id="@+id/bHorizontal"
+                android:id="@+id/bLinear"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Desplaçament horizontal" />
+                android:text="@string/Linear" />
+
+            <Button
+                android:id="@+id/bRotation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/Rotacio" />
+
+            <Button
+                android:id="@+id/bFade"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/Fade" />
+
+            <Button
+                android:id="@+id/bColor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/color" />
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Button" />
         </LinearLayout>
     </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>
