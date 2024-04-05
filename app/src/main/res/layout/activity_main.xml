@@ -47,16 +47,10 @@
                 android:text="@string/Fade" />
 
             <Button
-                android:id="@+id/bColor"
+                android:id="@+id/bPersonal"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/color" />
-
-            <Button
-                android:id="@+id/button2"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Button" />
+                android:text="@string/personal" />
         </LinearLayout>
     </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>

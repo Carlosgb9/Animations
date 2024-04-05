@@ -8,7 +8,7 @@
         android:propertyName="y"
         android:repeatCount="infinite"
         android:repeatMode="reverse"
-        android:valueTo="-400"
+        android:valueTo="400"
         android:valueType="floatType"
         />
 

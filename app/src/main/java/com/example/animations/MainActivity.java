@@ -10,7 +10,7 @@ import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
 
-    private Button bDrawCercle, bTween, bLinear, bRotation, bFade, bColor;
+    private Button bDrawCercle, bTween, bLinear, bRotation, bFade, bPersonal;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
         bLinear.setOnClickListener(v -> startAction(R.id.bLinear));
         bRotation.setOnClickListener(v -> startAction(R.id.bRotation));
         bFade.setOnClickListener(v -> startAction(R.id.bFade));
-        bColor.setOnClickListener(v -> startAction(R.id.bColor));
+        bPersonal.setOnClickListener(v -> startAction(R.id.bPersonal));
     }
 
     private void initialize(){
@@ -42,7 +42,7 @@ public class MainActivity extends AppCompatActivity {
         bLinear = findViewById(R.id.bLinear);
         bRotation = findViewById(R.id.bRotation);
         bFade = findViewById(R.id.bFade);
-        bColor = findViewById(R.id.bColor);
+        bPersonal = findViewById(R.id.bPersonal);
     }
 
     public void animacioTween(){

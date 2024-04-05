@@ -11,25 +11,29 @@
         android:id="@+id/dragon"
         android:layout_width="265dp"
         android:layout_height="526dp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.497"
         app:srcCompat="@drawable/dragon"
-        tools:ignore="MissingConstraints" />
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="42dp" />
 
     <ImageView
         android:id="@+id/flame"
-        android:layout_width="151dp"
-        android:layout_height="385dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_width="172dp"
+        android:layout_height="419dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.111"
+        app:layout_constraintHorizontal_bias="0.066"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.294"
         app:srcCompat="@drawable/flame"
-        tools:ignore="MissingConstraints" />
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="42dp" />
+
+    <ImageView
+        android:id="@+id/f1"
+        android:layout_width="204dp"
+        android:layout_height="85dp"
+        app:srcCompat="@drawable/f1"
+        tools:layout_editor_absoluteX="89dp"
+        tools:layout_editor_absoluteY="568dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

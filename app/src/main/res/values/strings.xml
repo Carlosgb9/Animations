@@ -2,8 +2,9 @@
     <string name="app_name">Animations</string>
     <string name="Circles">Dibuixar cercles</string>
     <string name="Tween">Animacio Tween</string>
-    <string name="Linear">Desplaçament Linear</string>
+    <string name="Linear">Desplaçament Linear i canvi de color</string>
     <string name="Rotacio">Animacio Rotacio</string>
     <string name="Fade">Animacio esvaïment</string>
     <string name="color">Animacio Color</string>
+    <string name="personal">Animacio Personalitzada</string>
 </resources>
