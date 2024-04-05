@@ -19,7 +19,7 @@ import android.widget.ImageView;
 
 public class Action extends AppCompatActivity {
 
-    private ImageView dragon;
+    private ImageView dragon, flame;
 
     private ConstraintLayout layout;
 
@@ -32,15 +32,22 @@ public class Action extends AppCompatActivity {
             setContentView(new CircleView(this));
         } else if (selectedAction == R.id.bLinear){
             setContentView(R.layout.activity_action);
+            init();
+            flame.setVisibility(View.INVISIBLE);
             linearAnimation();
         } else if (selectedAction == R.id.bRotation){
             setContentView(R.layout.activity_action);
+            init();
+            flame.setVisibility(View.INVISIBLE);
             rotationAnimation();
         } else if (selectedAction == R.id.bFade){
             setContentView(R.layout.activity_action);
+            init();
+            flame.setVisibility(View.INVISIBLE);
             fadeAnimation();
         } else if (selectedAction == R.id.bColor){
             setContentView(R.layout.activity_action);
+            init();
             colorAnimation();
         }
     }
@@ -55,7 +62,6 @@ public class Action extends AppCompatActivity {
 
     public void rotationAnimation(){
         init();
-        dragonVisibility();
         layout.setBackgroundResource(R.drawable.mordor);
         AnimatorSet dragonSet = new AnimatorSet();
         TimeInterpolator inter = new LinearInterpolator();
@@ -77,7 +83,6 @@ public class Action extends AppCompatActivity {
 
     public void fadeAnimation(){
         init();
-        dragonVisibility();
         layout.setBackgroundResource(R.drawable.mordor);
 
         /*ValueAnimator fadeAnim = ObjectAnimator.ofFloat(dragon, "alpha", 1.0f, 0.0f);
@@ -93,24 +98,27 @@ public class Action extends AppCompatActivity {
     }
 
     public void colorAnimation(){
-        ValueAnimator skyAnim = ObjectAnimator.ofInt( findViewById(R.id.layout), "backgroundColor", Color.rgb(0x66, 0xcc, 0xff), Color.rgb(0x00, 0x66, 0x99));
+        flameVisibility();
+        layout.setBackgroundResource(R.drawable.mordor);
+        ValueAnimator colorAnim = ObjectAnimator.ofInt(flame.getDrawable(), "tint", Color.rgb(255, 255, 0), Color.rgb(255, 0, 0));
 
-        skyAnim.setDuration(3000);
-        skyAnim.setRepeatCount(ValueAnimator.INFINITE);
-        skyAnim.setRepeatMode(ValueAnimator.REVERSE);
+        colorAnim.setDuration(3000);
+        colorAnim.setRepeatCount(ValueAnimator.INFINITE);
+        colorAnim.setRepeatMode(ValueAnimator.REVERSE);
 
-        skyAnim.setEvaluator(new ArgbEvaluator()); // parecido al interpolador en cuanto a función
+        colorAnim.setEvaluator(new ArgbEvaluator());
 
-        skyAnim.start();
+        colorAnim.start();
     }
 
-    public void dragonVisibility(){
-        dragon.setVisibility(View.VISIBLE);
+    public void flameVisibility(){
+        flame.setVisibility(View.VISIBLE);
     }
 
     private void init (){
         dragon = findViewById(R.id.dragon);
         layout = findViewById(R.id.layout);
+        flame = findViewById(R.id.flame);
     }
 
 }
